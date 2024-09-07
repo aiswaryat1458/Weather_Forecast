@@ -19,22 +19,8 @@ A simple weather application that allows users to search for current weather con
 
 ### Getting Started
 
-1. **Clone the Repository**
 
-    ```sh
-    git clone https://github.com/yourusername/weather-app.git
-    cd weather-app
-    ```
-
-2. **Create Your Own API Key**
-
-    - Sign up at [WeatherAPI](https://www.weatherapi.com/) and obtain your API key.
-
-3. **Add Your API Key**
-
-    - Open `script.js` and replace `const apiKey = 'YOUR_API_KEY';` with your actual API key.
-
-4. **Open the Application**
+1. **Open the Application**
 
     - Open `index.html` in your preferred web browser.
 
