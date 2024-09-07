@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body class="bg-gradient-to-r from-blue-300 to-green-400 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-500px">
+
+        <h1 class=" text-2xl font-bold bg-white">WEATHER FORECAST</h1>
+
+        <input id="city-input" type="text" placeholder="Enter city" class="border rounded px-4 py-2 w-full mb-4">
+        <button id="search-button" class="bg-blue-400 text-white rounded px-4 py-2 w-20px hover:bg-blue-600 ring-2 ring-purple-500 ring-offset-2 ring-offset-slate-20 dark:ring-offset-slate-400">Search</button>
+        &nbsp;
+        <button id="getLocation" class="bg-blue-400 text-white rounded px-4 py-2 w-20px hover:bg-blue-600 ring-2 ring-purple-500 ring-offset-2 ring-offset-slate-20 dark:ring-offset-slate-400">Use Current Location</button>
+        <br><br>
+        <div class="mb-4">
+            <select id="recent-cities-dropdown" aria-label="Recently searched cities" class="border rounded p-2">
+                <option value="">Select a recently searched city</option>
+            </select>
+        </div>
+        
+
+        <div id="weather-info" class="mt-4 text-red-800 font-semibold italic text-center border-4">
+            <div id="weather-icon" class="text-5xl"></div>
+            <h2 id="temperature" class="text-xl font-semibold"></h2>
+            <p id="description" class="text-blue-600 font-semibold"></p>
+            <p id="humidity" class="text-blue-600 font-semibold"></p>
+            <p id="wind-speed" class="text-blue-600 font-semibold"></p>
+            <p id="location" class="text-black font-semibold"></p>
+       </div>
+
+        <div id="forecast-container"></div>
+    </div>
+   
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
